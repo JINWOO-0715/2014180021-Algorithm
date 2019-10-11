@@ -1,60 +1,39 @@
+# Created by https://www.gitignore.io/api/c++,visualstudio
+# Edit at https://www.gitignore.io/?templates=c++,visualstudio
 
-# Created by https://www.gitignore.io/api/c,visualstudio
-# Edit at https://www.gitignore.io/?templates=c,visualstudio
-
-### C ###
+### C++ ###
 # Prerequisites
 *.d
 
-# Object files
+# Compiled Object files
+*.slo
+*.lo
 *.o
-*.ko
 *.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
 
 # Precompiled Headers
 *.gch
 *.pch
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
+# Compiled Dynamic libraries
 *.so
-*.so.*
 *.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
 
 # Executables
 *.exe
 *.out
 *.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -101,10 +80,9 @@ Generated\ Files/
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
-# NUnit
+# NUNIT
 *.VisualState.xml
 TestResult.xml
-nunit-*.xml
 
 # Build Results of an ATL Project
 [Dd]ebugPS/
@@ -126,8 +104,10 @@ StyleCopReport.xml
 *_i.c
 *_p.c
 *_h.h
+*.ilk
 *.meta
 *.iobj
+*.pdb
 *.ipdb
 *.pgc
 *.pgd
@@ -241,8 +221,6 @@ PublishScripts/
 
 # NuGet Packages
 *.nupkg
-# NuGet Symbol Packages
-*.snupkg
 # The packages folder can be ignored because of Package Restore
 **/[Pp]ackages/*
 # except build/, which is used as an MSBuild target.
@@ -318,9 +296,7 @@ ServiceFabricBackup/
 *.bim.layout
 *.bim_*.settings
 *.rptproj.rsuser
-*- [Bb]ackup.rdl
-*- [Bb]ackup ([0-9]).rdl
-*- [Bb]ackup ([0-9][0-9]).rdl
+*- Backup*.rdl
 
 # Microsoft Fakes
 FakesAssemblies/
@@ -403,4 +379,4 @@ healthchecksdb
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
 
-# End of https://www.gitignore.io/api/c,visualstudio
+# End of https://www.gitignore.io/api/c++,visualstudio
