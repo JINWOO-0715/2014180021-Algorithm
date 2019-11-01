@@ -51,6 +51,44 @@ int graph[][v]= {
 {4,0,3,0,0,9},
 {0,2,7,1,9,0}};
 
+int prim_graph[][v] = {
+	{0,3,2,0,4,0},
+	{3,0,4,1,0,2},
+	{2,4,0,0,5,7},
+	{0,1,0,0,0,1},
+	{4,0,5,0,0,9},
+	{0,2,7,1,9,0}
+
+};
+
+void prim(int list[][v] , int num) {
+
+	int From[v] = { 1, };
+	int Dist[v] = { 0, };
+	int Dist_index;
+	int list_index =0;
+
+	int T[2][v];
+	
+	for (int i = num; i < v; i++)
+	{
+		int min = 9999;
+		for (int j = i+1; j < v; j++)
+		{
+			From[i] = 0;
+			Dist[j] = list[i][j];
+			if (Dist[j] < min)
+			{
+				Dist_index = j;
+			}
+			Dist[Dist_index] = 0;
+			T[0][list_index] = Dist_index;
+			T[1][list_index] = i;
+		}
+	}
+	
+}
+
 // 다 끊어버린다 가중치 오름차순으로 정렬 한다 
 void find_min() {
 	int E[2][v]; // 임시 저장 

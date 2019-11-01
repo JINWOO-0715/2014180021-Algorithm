@@ -142,7 +142,7 @@
     <ClInclude Include="treePrint.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="크루스칼.cpp" />
+    <ClCompile Include="프림.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
