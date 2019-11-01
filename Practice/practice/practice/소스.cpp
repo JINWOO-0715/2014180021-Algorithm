@@ -78,7 +78,7 @@ node * tree_delete(node*root,int value)
 }
 node * tree_search(node* root, int value)
 {
-
+	return 0;
 }
 void swap(int *a, int *b)
 {
@@ -98,6 +98,7 @@ void Q_sort(int list[], int left, int right)
 		{
 			if (list[p] > list[i])
 			{
+
 				swap(&list[j], &list[i]);
 			}
 		}
@@ -238,10 +239,20 @@ int main()
 
 	int num = 0;
 
+
 	node* root = NULL;
 	for (int i = 0; i < 20; i++)
 	{
+		arr[i] = rand() % 999;
+		
 		root = tree_insert(root, rand()%999);
+	}
+	Q_sort(arr, 0, 19);
+	for (int i = 0; i < 20; i++)
+	{
+		printf(" %d ", arr[i]);
+
+		
 	}
 	printf(" ÈÄÀ§ \n");
 	BST_print_b(root);
